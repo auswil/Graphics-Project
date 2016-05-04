@@ -44,30 +44,6 @@ GuiConfig.filterDefs = [
       },
     ]
   },
-  // disabled in favor of push + fill in order to simplify caching
-  // {
-  //   name: "Push Blank Image",
-  //   folderName: undefined,
-  //   notFilter: true,
-  //   pushImage: true,
-  //   paramDefs: [
-  //     {
-  //       name: "width",
-  //       defaultVal: 480,
-  //       isString: true,
-  //     },
-  //     {
-  //       name: "height",
-  //       defaultVal: 320,
-  //       isString: true,
-  //     },
-  //     {
-  //       name: "color",
-  //       defaultVal: [0, 0, 0],
-  //       isColor: true,
-  //     },
-  //   ]
-  // },
   {
     name: "Batch Mode",
     notFilter: true,
@@ -496,22 +472,10 @@ GuiConfig.filterDefs = [
   },
 
 
-  // MISC OPERATIONS
-  {
-    name: "Palette",
-    folderName: "Misc",
-    paramDefs: [
-      {
-        name: "num colors",
-        defaultVal: 3,
-        sliderRange: [1, 6],
-        isFloat: false,
-      },
-    ]
-  },
+  // ADVANCED OPERATIONS
   {
     name: "Paint",
-    folderName: "Misc",
+    folderName: "Advanced",
     paramDefs: [
       {
         name: "input value",
@@ -524,7 +488,7 @@ GuiConfig.filterDefs = [
   {
     name: "XDoG",
     funcName: "xDoGFilter",
-    folderName: "Misc",
+    folderName: "Advanced",
     paramDefs: [
       {
         name: "input value",
@@ -536,9 +500,9 @@ GuiConfig.filterDefs = [
   },
 
   {
-    name: "CustomFilter",
-    funcName: "customFilter",
-    folderName: "Misc",
+    name: "Mosaic",
+    funcName: "mosaic",
+    folderName: "Advanced",
     canAnimate: true,
     paramDefs: [
       {

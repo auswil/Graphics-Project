@@ -352,7 +352,7 @@ Filters.xDoGFilter = function( image, value ) {
   return image;
 };
 
-Filters.customFilter = function( image, value ) {
+Filters.mosaic = function( image, value ) {
   // You can use this filter to do whatever you want, for example
   // trying out some new idea or implementing something for the
   // art contest.
@@ -363,6 +363,6 @@ Filters.customFilter = function( image, value ) {
   // ----------- STUDENT CODE BEGIN ------------
   // ----------- Our reference solution uses 0 lines of code.
   // ----------- STUDENT CODE END ------------
-  Gui.alertOnce ('customFilter is not implemented yet');
+  Gui.alertOnce ('mosaic is not implemented yet');
   return image;
 };
