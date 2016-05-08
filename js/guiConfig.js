@@ -15,7 +15,8 @@ GuiConfig.imageNames = [
   'chang.jpg',
   'halber.jpg',
   'doge.jpg',
-  'alpha.png'
+  'alpha.png',
+  'yy.png'
 ];
 
 var sampleDropdownOptions = ['point', 'bilinear', 'gaussian'];
@@ -108,7 +109,7 @@ GuiConfig.filterDefs = [
       {
         name: "radius",
         defaultVal: 10,
-        sliderRange: [1, 100],
+        sliderRange: [0, 1],
         isFloat: false,
       },
       {
@@ -478,9 +479,21 @@ GuiConfig.filterDefs = [
     folderName: "Advanced",
     paramDefs: [
       {
-        name: "input value",
+        name: "radius",
         defaultVal: 0.5,
         sliderRange: [0, 1],
+        isFloat: true,
+      },
+      {
+        name: "length",
+        defaultVal: 0.5,
+        sliderRange: [0, 1],
+        isFloat: true,
+      },
+      {
+        name: "direction",
+        defaultVal: 0.5,
+        sliderRange: [0, 3.14],
         isFloat: true,
       },
     ]
@@ -510,6 +523,31 @@ GuiConfig.filterDefs = [
         defaultVal: 0.5,
         sliderRange: [0, 1],
         isFloat: true,
+      },
+    ]
+  },
+  {
+    name: "Apply",
+    funcName: "applyToArea",
+    folderName: "Advanced",
+    canAnimate: true,
+    paramDefs: [
+      {
+        name: "input value",
+        defaultVal: 0.5,
+        sliderRange: [0, 1],
+        isFloat: true,
+      },
+      {
+        name: "input value",
+        defaultVal: 0.5,
+        sliderRange: [0, 1],
+        isFloat: true,
+      },
+      {
+        name: "verts",
+        defaultVal: "",
+        isString: true,
       },
     ]
   },
