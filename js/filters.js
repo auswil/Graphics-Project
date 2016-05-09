@@ -485,7 +485,7 @@ Filters.morphFilter = function( initialImg, finalImg, alpha, sampleMode, linesFi
   return image;
 };
 
-Filters.brushFilter = function( image, radius, color, vertsString ) {
+Filters.brushFilter2 = function( image, radius, color, vertsString ) {
   // extract vertex coordinates from the URL string.
   var centers = [];
   var coordStrings = vertsString.split("x");
@@ -1019,7 +1019,7 @@ Filters.customFilter = function( image, value ) {
 };
 
 
-Filters.paintFilter = function( image, value ) {
+Filters.paintFlowFilter = function( image, value ) {
   // http://mrl.nyu.edu/publications/painterly98/hertzmann-siggraph98.pdf
   // ----------- STUDENT CODE BEGIN ------------
     // ----------- Our reference solution uses 52 lines of code.
