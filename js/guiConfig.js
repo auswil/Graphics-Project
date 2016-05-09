@@ -146,6 +146,19 @@ GuiConfig.filterDefs = [
     ]
   },
   {
+    name: "Paint",
+    folderName: "Misc",
+    funcName: "paintFlowFilter",
+    paramDefs: [
+      {
+        name: "input value",
+        defaultVal: 0.5,
+        sliderRange: [0, 1],
+        isFloat: true,
+      },
+    ]
+  },
+  {
     name: "XDoG",
     funcName: "xDoGFilter",
     folderName: "Final Project",
@@ -163,6 +176,34 @@ GuiConfig.filterDefs = [
     name: "Mosaic",
     funcName: "mosaic",
     folderName: "Final Project",
+    canAnimate: true,
+    paramDefs: [
+      {
+        name: "input value",
+        defaultVal: 0.5,
+        sliderRange: [0, 1],
+        isFloat: true,
+      },
+    ]
+  },
+  {
+    name: "XDoG",
+    funcName: "xDoGFilter",
+    folderName: "Misc",
+    paramDefs: [
+      {
+        name: "input value",
+        defaultVal: 0.5,
+        sliderRange: [0, 1],
+        isFloat: true,
+      },
+    ]
+  },
+
+  {
+    name: "CustomFilter",
+    funcName: "customFilter",
+    folderName: "Misc",
     canAnimate: true,
     paramDefs: [
       {
