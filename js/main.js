@@ -68,7 +68,7 @@ Main.pushBrushSplat = function() {
   var filterInsts = Gui.getFilterHistoryData();
   if (filterInsts.length > 0) {
     var topFilter = filterInsts[filterInsts.length - 1];
-    if (topFilter.filterDef.name == "Brush" || topFilter.filterDef.name == "Apply") {
+    if (topFilter.filterDef.name == "Brush" || topFilter.filterDef.name == "Reverse Brush") {
       var vertsTextBox = topFilter.guiControls[2];
       var imageOffsetInCanvas = Math.max(Main.imageStack.length - 1, 0) * Main.imageStackDisplayOffset;
       vertsTextBox.setValue(vertsTextBox.getValue() + "x" + (Main.mouseX - imageOffsetInCanvas) + "y" + (Main.mouseY - imageOffsetInCanvas));
