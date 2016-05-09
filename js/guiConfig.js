@@ -5,17 +5,19 @@ var GuiConfig = GuiConfig || {
 };
 
 GuiConfig.imageNames = [
-  'flower.jpg',
-  'goldengate.jpg',
-  'leaves.jpg',
-  'woman.jpg',
-  'man.jpg',
-  'town.jpg',
-  'mesa.jpg',
-  'chang.jpg',
-  'halber.jpg',
-  'doge.jpg',
-  'alpha.png'
+    'flower.jpg',
+    'goldengate.jpg',
+    'leaves.jpg',
+    'woman.jpg',
+    'man.jpg',
+    'town.jpg',
+    'mesa.jpg',
+    'chang.jpg',
+    'halber.jpg',
+    'doge.jpg',
+    'alpha.png',
+    'hat.jpg',
+    'plaid.jpg'
 ];
 
 var sampleDropdownOptions = ['point', 'bilinear', 'gaussian'];
